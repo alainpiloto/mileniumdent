@@ -87,7 +87,7 @@ background-position: center;
 
 #title {
     color: whitesmoke;
-    font-family: lovelo, Sans-Serif bold;
+    font-family: "lovelo", sans-serif;
     position: absolute;
     display: inline-block;
     font-size: 2.5rem;
