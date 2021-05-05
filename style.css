@@ -491,7 +491,7 @@ background-position: center;
                 color: #ebebeb;
                 /* margin: 30px 10px; */
                 display: grid;
-                grid-template-columns: 0,5fr 1fr 1fr;
+                grid-template-columns: 0.5fr 1fr 1fr;
                 grid-template-rows: repeat(4 , 20px);
                 grid-template-areas: 
                     "label1 input1 label5"
