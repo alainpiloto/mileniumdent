@@ -1,0 +1,650 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+#background_header {
+background-attachment: fixed;
+width: 100%;
+background-position: center;
+}
+
+
+.cabeceraNavs {
+    /* background-color: rgba(0,0,0,0.5); */
+    transition: 1s;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    padding: 16px;
+    z-index: 99999;
+
+}
+
+        .cabeceraNavsBackground {
+    transition: 1s;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    padding: 16px;
+    z-index: 99999;
+        }
+
+    /* Estilizado para los links del header INICIO*/
+
+    .navlinks {
+        position: relative;
+        text-decoration: none;
+        font-family: 'Poppins',sans-serif;
+        color: #ebebeb;
+        font-size: 14px;
+        margin: 16px 10px;
+        transform: translateX(-60px);
+        letter-spacing: 0.7px;
+        padding: 0 1px;
+    }
+    .navlinks:after{
+        content: "";
+        position: absolute;
+        background-color: rgb(39, 254, 247);
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    .navlinks:hover{
+        color: #ffffff;
+    }
+    .navlinks:hover:after{
+        width: 100%;
+    }
+
+    /* Estilizado para los links del header FIN*/
+
+
+    #logo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 150px;
+        margin: 0.5rem 3rem;
+    }
+
+#title {
+    color: whitesmoke;
+    font-family: lovelo;
+    position: absolute;
+    display: inline-block;
+    font-size: 2.5rem;
+    top: 40%;
+    text-align: center;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 6rem; 
+    z-index: 0; 
+}
+
+    span {
+        color: rgb(39, 254, 247);
+    }
+
+#link_agendar_cita {
+    /* text-decoration: none;
+    font-size: 1rem;
+    color: rgb(245, 245, 245);
+    font-family: sans-serif; */
+    position: absolute; 
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* overflow:hidden;
+    padding: 0.5rem 4rem;
+    border: 3px solid #84e7a8;
+    -webkit-border-radius: 5px;
+    border-radius: 5px */
+}
+
+    /* Efecto Hover Boton de agendar Cita INICIO */
+    .btn{
+        border: 3px solid rgba(132, 231, 168, 0.6);
+        border-radius: 5px;
+        background: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: sans-serif;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.8s;
+        position: relative;
+        overflow: hidden;
+    }
+    .btn2{
+        color: rgba(132, 231, 168, 0.9);
+    }
+    
+    .btn2:hover{
+        color: #fff;
+    }
+    
+    .btn::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: rgba(132, 231, 168, 0.4);
+        z-index: -1;
+        transition: 0.8s;
+    }
+    
+    .btn2::before{
+        bottom: 0;
+        border-radius: 50% 50% 0 0;
+    }
+    
+    .btn2:hover::before{
+        height: 180%;
+    }
+    
+    /* Efecto Hover Boton de agendar Cita FIN */
+
+
+#slogan {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: lovelo;
+}
+
+                                            /* Segunda pagina: NOSOTROS */
+
+#nosotros_container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+    #logo_grande {
+        
+        position: absolute;
+        left: -220px;
+        top: 570px;
+        width: 70%;
+        z-index: 4;;
+    }
+  
+    #nosotros-titulo {
+        font-family: sans-serif;
+        font-size: 2.5rem;
+        color: rgb(32, 168, 164);
+        width: 500px;
+        padding: 2rem 3rem 3rem 2rem;
+        text-align: center;
+    }
+    
+  
+    #nosotros_reseña {
+        font-size: 1.3rem;
+        color: rgba(0, 0, 0, 0.719);
+        width: 500px;
+        text-align: center;
+        margin-right: 4rem;
+    }
+
+                                            /* TERCERA PAGINA: CASOS */
+
+#casosContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    justify-content: center ;
+    align-items: center;
+    overflow: hidden;
+
+    }
+
+    #casosFondo {
+        
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: 3;
+
+    }
+    #casosTitulo {
+        font-family: sans-serif;
+        font-size: 2.5rem;
+        color: rgb(32, 168, 164);
+        padding: 0rem 2rem 2rem 2rem;
+      
+    }
+
+    #celularContainer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 50vw;
+        z-index: 5;
+
+    }
+    #celularMockup {
+
+        position: relative;
+        width: 350px;
+    }
+
+    #instagramContainer {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        z-index: 6;
+        align-content: center;
+        align-items: center;
+    }
+        #instagramsymbol {
+
+            align-items: center;
+            align-content: center;
+            width: 80px;
+        }
+
+        #instagramTexto {
+            background: linear-gradient(rgb(255, 145, 0),red, blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 2rem;
+            width: 400px;
+            text-align: center;    
+            font-size: 2.7rem;
+        }
+
+            #instagramLink:hover {
+                font-size: 3rem;
+                transition: .8s;
+            }
+                                            /* CUARTA PAGINA: PROMOCIONES */
+    #promosContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+        #fondoPromo {
+            width: 100%;
+            position: absolute;
+            z-index: 3;
+        }
+
+        #tituloContainer {
+            position: relative;
+            z-index: 4;
+            width: 35%;
+            height: 100VH;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 20px;
+            overflow: hidden;
+        }
+
+            #promoTitulo {
+                font-size: 3rem;
+                font-family: sans-serif;
+                color: rgb(39, 254, 247);
+                text-shadow: #ebebeb;
+            }
+
+        #cardsContainer {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            z-index: 3;
+            justify-content: center;
+            align-items: center;
+            width: 65%;
+        }
+
+            #cardsImg1 {
+                width: 280px;
+                filter: drop-shadow(0 2px 7px rgba(76, 19, 233, 0.7));
+            }
+                #cardsImg1:hover {
+                    width: 290px;
+                    filter: drop-shadow(0 2px 7px rgba(255, 255, 255, 0.795));
+                    transition: 0.8s;
+                }
+            #cardsImg2 {
+                width: 310px;
+                filter: drop-shadow(0 2px 7px rgba(76, 19, 233, 0.7));
+            }
+                #cardsImg2:hover {
+                    width: 320px;
+                    filter: drop-shadow(0 2px 7px rgba(255, 255, 255, 0.795));
+                    transition: 0.8s;
+                }
+            #cardsImg3 {
+                width: 280px;
+                filter: drop-shadow(0 2px 7px rgba(76, 19, 233, 0.7));
+            }
+                #cardsImg3:hover {
+                    width: 290px;
+                    filter: drop-shadow(0 2px 7px rgba(255, 255, 255, 0.795));
+                    transition: 0.8s;
+                }
+
+                                    /* QUINTA PAGINA: CONTACTO */
+
+#contacto {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+
+    #imgContacto {
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    #tituloContactoContainer {
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 10vh;
+        /* margin: 50px; */
+    }
+
+        #tituloContacto {
+            display: flex;
+            flex-direction: column;
+            color:rgb(32, 168, 164);
+            font-size: 2.6rem;
+        
+        }
+
+    #contenedorDirecciones {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.1rem;
+        font-weight: 550;
+  
+    }
+    
+        .column {
+            width: 33.33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* align-content: center; */
+        }
+
+        #direc1, #direc2 {
+            border-right: solid rgb(0, 128, 128);
+        }
+
+            .mapIcon {
+                width: 30px;
+                padding: 20px;
+            }
+
+            h4 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+
+            .direccionTexto {
+                /* justify-content: left; */
+            }
+
+            .horariosTexto {
+                padding-top: 10px ;
+            }
+
+    #formularioPagina {
+        display: flex;
+        flex-direction: row;
+        height: 42vh;
+        margin-top: 20px;
+        background-color: rgb(49, 49, 49);
+        width: 100%;
+    }   
+
+        #formularioContenedor {
+            border-left: solid rgb(32, 168, 164);
+        }
+
+        #logoRedesContenedor {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+            justify-content: center; 
+           }
+
+            #logoImgContacto {
+                width: 400px;
+                
+            }
+
+                #logoImgContacto:hover {
+                    transition: 1.5s;
+                    filter: drop-shadow(0 1px 5px rgba(255, 255, 255, 0.795));
+                }
+        #logosRedes {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+            .icons {
+                width: 30px;
+                margin: 10px 20px;
+                filter: drop-shadow(0 1px 2.5px rgba(255, 255, 255, 0.795));
+
+                /* border: solid 2px rgb(255, 255, 255);
+                border-radius: 5px ;
+                padding: 2.5px; */
+            }
+
+                .icons:hover {
+                    width: 35px;
+                }
+                                                        /* FORMULARIO CON GRID: CUIDADO! */
+        #formulario {
+
+            width: 50%;
+            margin: auto;
+            margin-top: 80px;
+        }    
+            form {
+                color: #ebebeb;
+                /* margin: 30px 10px; */
+                display: grid;
+                grid-template-columns: 0,5fr 1fr 1fr;
+                grid-template-rows: repeat(4 , 20px);
+                grid-template-areas: 
+                    "label1 input1 label5"
+                    "label2 input2 input5"
+                    "label3 input3 input5"
+                    "label4 input4 input6";
+                grid-gap: 1rem 2rem;
+            }
+
+                label {
+                    font-size: 1.1rem;
+                }
+
+                input {
+                    padding: 10px;
+                    border-radius: 4px;
+                    border: 1px solid #ccc;
+                }
+
+                textarea {
+                    border: 1px solid #ccc;
+                    min-width: 250px;
+                    max-width: 300px;
+                }
+
+                    .label1 {
+                        grid-area: label1;
+                    }
+                        .input1 {
+                            grid-area: input1;
+                        }
+                    .label2 {
+                        grid-area: label2;
+                    }
+                        .input2 {
+                            grid-area: input2;
+                        }
+                    .label3 {
+                        grid-area: label3;
+                    }
+                        .input3 {
+                            grid-area: input3;
+                        }
+                    .label4 {
+                        grid-area: label4;
+                    }   
+                        .input4 {
+                            grid-area: input4;
+                        }
+                    .label5 {
+                        grid-area: label5;
+                    }
+                        .input5 {
+                            grid-area: input5;
+                        }
+                    .label6 {
+                        grid-area: label6;
+                        margin: auto;
+                    }
+                        .input6 {
+                            margin: auto;
+                            grid-area: input6;
+                        }
+                    
+            #enviarInput {
+                background-color: black;
+                color: blanchedalmond;
+                padding: 7px;
+                
+            }
+    #footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(32, 168, 164);
+        color: rgb(230, 224, 224);
+        width: 100%;
+        height: 8vh;
+    }
+
+/* For 1024 Resolution */  
+@media only screen   and (min-device-width : 768px)   and (max-device-width : 1024px) {
+    #celularMockup {
+
+        position: relative;
+        width: 300px;
+    }
+    #instagramsymbol {
+
+     
+        width: 60px;
+    }
+
+    #instagramTexto {
+       
+        font-size: 2rem;
+    }
+
+}
+
+
+
+
+    @media only screen   and (min-device-width : 768px)   and (max-device-width : 1024px)  
+{ 
+
+    #cardsImg1 {
+        width: 240px;
+        filter: drop-shadow(0 2px 7px rgba(76, 19, 233, 0.7));
+    }
+        #cardsImg1:hover {
+            width: 250px;
+            filter: drop-shadow(0 2px 7px rgba(255, 255, 255, 0.795));
+            transition: 0.8s;
+        }
+    #cardsImg2 {
+        width: 270px;
+        filter: drop-shadow(0 2px 7px rgba(76, 19, 233, 0.7));
+    }
+        #cardsImg2:hover {
+            width: 280px;
+            filter: drop-shadow(0 2px 7px rgba(255, 255, 255, 0.795));
+            transition: 0.8s;
+        }
+    #cardsImg3 {
+        width: 240px;
+        filter: drop-shadow(0 2px 7px rgba(76, 19, 233, 0.7));
+    }
+        #cardsImg3:hover {
+            width: 250px;
+            filter: drop-shadow(0 2px 7px rgba(255, 255, 255, 0.795));
+            transition: 0.8s;
+        }
+
+    }                 
+
+    /* CONFIGURACION DEL TIEMPO DE ACCION DE LAS ANIMACIONES */
+    .fast {
+        -moz-animation-duration: 1s;
+        -moz-animation-delay: 0s;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-delay: 0s;
+    }
+    .slow {
+        -moz-animation-duration: 3s;
+        -moz-animation-delay: 1s;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-delay: 1s;
+    }
+    .reallyslow {
+        -moz-animation-duration: 4s;
+        -moz-animation-delay: 2s;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-delay: 2s;
+    }
