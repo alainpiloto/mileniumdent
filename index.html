@@ -41,7 +41,7 @@
     <div id="showForMobile" class="position-fixed top-0 end-0" style="z-index: 1000; width: 100%;">
         <div class="collapse " id="navbarToggleExternalContent" >
           <div class="bg-dark p-4 ">
-            <img src="img/logo_milenium_con_letras 342x136px.png" class="navbar-brand" height="64">
+            <img src="img_mobile/logo_milenium_con_letras 342x136px.png" class="navbar-brand" height="64">
             <a class="nav-link" href="#" style="color: rgb(255, 255, 255);"><span class="icon-home"></span> Inicio</a>
             <a class="nav-link" href="#nosotros_container" style="color: rgb(255, 255, 255);"><span class="icon-users"></span> Nosotros</a>
             <a class="nav-link" href="#casosContainer" style="color: rgb(255, 255, 255);"><span class="icon-images"></span> Casos</a>            
@@ -60,7 +60,11 @@
     
     
     <section id="header-container">
-        <img id="background_header" src="img/FONDO DE PRUEBA.jpg" alt="IMAGEN DE FONDO">  
+        <picture>
+    <source srcset="img_mobile/img_movil1.jpg" media="(max-width: 768px)">
+    <source srcset="img/fondo_header_2.jpg" media="(min-width: 800px)">
+    <img id="imgFondoInicio" src="img_mobile/img_movil1.jpg" alt="Imagen-fondo-inicio" style="top: 0;">
+  </picture> 
         
             <div id="title">
                 <h1 class="aniview slow" data-av-animation="fadeIn"><bold><span>M</span>ILENIU<span>M</span><br> <span>D</span>EN<span>T</span></bold></h1>
