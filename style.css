@@ -250,6 +250,8 @@ background-position: center center;
         width: 100%;
         height: 100vh;
         z-index: 3;
+        background-repeat: no-repeat;
+        background-position: center center;
 
     }
     #casosTitulo {
@@ -694,8 +696,63 @@ background-position: center center;
         width: 20%;
         z-index: 4;
     }
+
+    #logo_grande {
+        visibility: hidden;   
+        position: absolute;
+        left: -220px;
+        top: 570px;
+    }
+
+    #nosotros-titulo {
+        width: 100%;
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 2.5rem;
+        color: rgb(32, 168, 164);
+        padding: 1rem;
+        text-align: center;
+    }
+    #nosotros_reseña {
+        margin: 0;
+        padding: 1rem;
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.719);
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    #casosContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center ;
+        align-items: center;
+        overflow: hidden;
 }
 
+    #instagramTexto {
+        display: none;
+    }
+
+    #casosTitulo {
+        padding: 1rem;
+    }
+        #instagramIcons {
+            display: none;
+        }
+        
+        #instagramsymbol {
+            width: 40px;
+        }
+
+    #celularMockup {
+        width: 70vw;
+    }
+
+}
 
     /* CONFIGURACION DEL TIEMPO DE ACCION DE LAS ANIMACIONES */
     .fast {
