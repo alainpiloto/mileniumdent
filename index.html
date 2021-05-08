@@ -21,7 +21,7 @@
 </head>
 <body>
 
-    <div id="header_top" >
+    <div id="header_top" class="hideForMobile">
         <nav id="navbar" class="cabeceraNavs">
             <img id="logo" src="img/recurso_9.svg" alt="">
             <a href="#" class="navlinks">Inicio</a>
@@ -32,6 +32,30 @@
         </nav>
         
     </div>
+    
+                                                    <!-- NAVBAR PARA MOBILES -->
+    
+    <div id="showForMobile" class="position-fixed top-0 end-0" style="z-index: 1000; width: 100%;">
+        <div class="collapse " id="navbarToggleExternalContent" >
+          <div class="bg-dark p-4 ">
+            <img src="/Pagina_de_pruebas/public/img/logo_milenium_con_letras 342x136px.png" class="navbar-brand" height="64">
+            <a class="nav-link" href="#" style="color: rgb(255, 255, 255);"><span class="icon-home"></span> Inicio</a>
+            <a class="nav-link" href="#nosotros_container" style="color: rgb(255, 255, 255);"><span class="icon-users"></span> Nosotros</a>
+            <a class="nav-link" href="#casosContainer" style="color: rgb(255, 255, 255);"><span class="icon-images"></span> Casos</a>            
+            <a class="nav-link" href="#promosContainer" style="color: rgb(255, 255, 255);"><span class="icon-emoji-happy"></span> Promociones</a>
+            <a class="nav-link" href="#contacto" style="color: rgb(255, 255, 255);"><span class="icon-mail"></span> Contacto</a>
+          </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+    
+    
     <section id="header-container">
         <img id="background_header" src="img/FONDO DE PRUEBA.jpg" alt="IMAGEN DE FONDO">  
         
