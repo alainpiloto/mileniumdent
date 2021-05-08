@@ -67,7 +67,7 @@ background-position: center center;
 
     /* Estilizado para los links del header INICIO*/
 
-    .navlinks {
+    .navlink.s {
         position: relative;
         text-decoration: none;
         font-family: 'Poppins',sans-serif;
@@ -78,7 +78,7 @@ background-position: center center;
         letter-spacing: 0.7px;
         padding: 0 1px;
     }
-    .navlinks:after{
+    .navlink.s:after{
         content: "";
         position: absolute;
         background-color: rgb(39, 254, 247);
@@ -88,10 +88,10 @@ background-position: center center;
         bottom: -10px;
         transition: 0.3s;
     }
-    .navlinks:hover{
+    .navlink.s:hover{
         color: #ffffff;
     }
-    .navlinks:hover:after{
+    .navlink.s:hover:after{
         width: 100%;
     }
 
