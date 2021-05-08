@@ -96,7 +96,7 @@ background-position: center center;
 
 #title h1 {
     color: whitesmoke;
-    font-family: "lovelo", sans-serif;
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     display: inline-block;
     font-size: 3.5rem;
@@ -180,7 +180,7 @@ background-position: center center;
     right: 5%;
     color: whitesmoke;
     font-size: 1.5rem;
-    font-family: lovelo;
+    font-family: 'Roboto', sans-serif;
 }
 
                                             /* Segunda pagina: NOSOTROS */
@@ -443,7 +443,7 @@ background-position: center center;
     #formularioPagina {
         display: flex;
         flex-direction: row;
-        height: 42vh;
+        height: 47vh;
         margin-top: 20px;
         background-color: rgb(49, 49, 49);
         width: 100%;
@@ -573,13 +573,14 @@ background-position: center center;
             }
     #footer {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        align-content: center;
         align-items: center;
         background-color: rgb(32, 168, 164);
         color: rgb(230, 224, 224);
         width: 100%;
-        height: 8vh;
+        height: 6vh;
     }
 
 /* For 1024 Resolution */  
@@ -650,6 +651,7 @@ background-position: center center;
         visibility: hidden;
     }
     #title h1 {
+        font-family: 'Roboto', sans-serif;
         font-size: 2.5rem;
         line-height: 3rem; 
         }
