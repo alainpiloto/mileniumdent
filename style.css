@@ -5,7 +5,7 @@
 }
 
 
-   @media only screen   and (min-device-width : 768px) and (max-device-width : 3000px) {
+   @media only screen   and (min-device-width : 768px) and (max-device-width : 4000px) {
     
         #showForMobile {
             visibility: hidden;
@@ -29,7 +29,7 @@
 #header-container picture img {
 background-attachment: fixed;
 width: 100%;
-backgorund-repeat: no-repeat;
+background-repeat: no-repeat;
 background-position: center center;
 }
 
@@ -45,7 +45,8 @@ background-position: center center;
     text-decoration: none;
     position: fixed;
     top: 0;
-    padding: 16px;
+    margin: 16px;
+    /* padding: 16px; */
     z-index: 99999;
 
 }
@@ -67,18 +68,18 @@ background-position: center center;
 
     /* Estilizado para los links del header INICIO*/
 
-    .navlink.s {
+    .links-hover {
         position: relative;
         text-decoration: none;
         font-family: 'Poppins',sans-serif;
         color: #ebebeb;
         font-size: 14px;
         margin: 16px 10px;
-        transform: translateX(-60px);
+        transform: translateX(-20px);
         letter-spacing: 0.7px;
         padding: 0 1px;
     }
-    .navlink.s:after{
+    .links-hover:after{
         content: "";
         position: absolute;
         background-color: rgb(39, 254, 247);
@@ -88,10 +89,10 @@ background-position: center center;
         bottom: -10px;
         transition: 0.3s;
     }
-    .navlink.s:hover{
+    .links-hover:hover{
         color: #ffffff;
     }
-    .navlink.s:hover:after{
+    .links-hover:hover:after{
         width: 100%;
     }
 
@@ -106,12 +107,12 @@ background-position: center center;
         margin: 0.5rem 3rem;
     }
 
-#title {
+#title h1 {
     color: whitesmoke;
     font-family: "lovelo", sans-serif;
     position: absolute;
     display: inline-block;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     top: 40%;
     text-align: center;  
     left: 50%;
@@ -141,7 +142,7 @@ background-position: center center;
 }
 
     /* Efecto Hover Boton de agendar Cita INICIO */
-    .btn{
+    .bton{
         border: 3px solid rgba(132, 231, 168, 0.6);
         border-radius: 5px;
         background: none;
@@ -155,15 +156,15 @@ background-position: center center;
         position: relative;
         overflow: hidden;
     }
-    .btn2{
+    .bton2{
         color: rgba(132, 231, 168, 0.9);
     }
     
-    .btn2:hover{
+    .bton2:hover{
         color: #fff;
     }
     
-    .btn::before{
+    .bton::before{
         content: "";
         position: absolute;
         left: 0;
@@ -174,12 +175,12 @@ background-position: center center;
         transition: 0.8s;
     }
     
-    .btn2::before{
+    .bton2::before{
         bottom: 0;
         border-radius: 50% 50% 0 0;
     }
     
-    .btn2:hover::before{
+    .bton2:hover::before{
         height: 180%;
     }
     
