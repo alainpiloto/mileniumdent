@@ -26,10 +26,11 @@
 
 
 
-#background_header {
+#header-container picture img {
 background-attachment: fixed;
 width: 100%;
-background-position: center;
+backgorund-repeat: no-repeat;
+background-position: center center;
 }
 
 
