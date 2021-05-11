@@ -594,6 +594,10 @@ background-position: center center;
         height: 6vh;
     }
 
+        #promoMobilePage {
+            display: none;
+        }
+
 /* For 1024 Resolution */  
 @media only screen   and (min-device-width : 768px)   and (max-device-width : 1024px) {
     #celularMockup {
@@ -750,7 +754,41 @@ background-position: center center;
 
     #celularMockup {
         width: 70vw;
+        
     }
+                        /* PAGINA PROMOCIONES MOBILE */
+    #promosContainer {
+        display: none;
+    }
+
+    #promoMobilePage {
+        display: contents;
+    }
+
+
+    #carouselPart {
+        width: 100%;
+        height: 70vh;
+    }
+    
+    #imagePart {
+        position: relative;
+        width: 100%;
+        height: 30vh;
+    }
+        h3 {
+            right: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: 2rem ;
+            text-shadow: 1px 1px rgb(161, 159, 159) ;
+            font-weight: 500;
+            bottom: 10px;
+            position: absolute;
+            z-index: 100;
+        }
+
+
 
 }
 
