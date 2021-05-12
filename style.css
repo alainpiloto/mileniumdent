@@ -858,6 +858,12 @@ background-position: center center;
                     height: 10vh;
                     font-size: 0.8rem;
                 }
+
+                .caption {
+                    display: table-caption;
+                    text-align: center;
+                    color: #ebebeb;
+                }
     }
 
     /* CONFIGURACION DEL TIEMPO DE ACCION DE LAS ANIMACIONES */
