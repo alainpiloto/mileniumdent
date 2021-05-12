@@ -395,7 +395,7 @@ background-position: center center;
     }
 
     #tituloContactoContainer {
-        padding-top: 70px;
+        padding-top: 110px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -418,7 +418,7 @@ background-position: center center;
         flex-direction: row;
         font-size: 1.1rem;
         font-weight: 550;
-  
+        margin: 10px;
     }
     
         .column {
@@ -435,7 +435,8 @@ background-position: center center;
 
             .mapIcon {
                 width: 30px;
-                padding: 20px;
+                margin-top: 30px;
+                margin-bottom: 10px;
             }
 
             h4 {
@@ -454,8 +455,8 @@ background-position: center center;
     #formularioPagina {
         display: flex;
         flex-direction: row;
-        height: 47vh;
-        margin-top: 20px;
+        height: 35vh;
+        /* margin-top: px; */
         background-color: rgb(49, 49, 49);
         width: 100%;
     }   
@@ -505,12 +506,13 @@ background-position: center center;
 
             width: 50%;
             margin: auto;
-            margin-top: 80px;
+            margin-top: 60px;
         }    
             form {
                 color: #ebebeb;
                 /* margin: 30px 10px; */
                 display: grid;
+                place-content: center;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(4 , 20px);
                 grid-template-areas: 
@@ -583,11 +585,8 @@ background-position: center center;
                 
             }
     #footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+        display: grid;
+        place-content: center;
         background-color: rgb(32, 168, 164);
         color: rgb(230, 224, 224);
         width: 100%;
@@ -597,6 +596,10 @@ background-position: center center;
         #promoMobilePage {
             display: none;
         }
+
+        /* iframe {
+            display: none;
+        } */
 
 /* For 1024 Resolution */  
 @media only screen   and (min-device-width : 768px)   and (max-device-width : 1024px) {
@@ -702,10 +705,12 @@ background-position: center center;
     }
 
     #logo_grande {
-        visibility: hidden;   
+        
         position: absolute;
-        left: -220px;
-        top: 570px;
+        left: -50;
+        top: 1100px;
+        width: 500px;
+        z-index: 5;
     }
 
     #nosotros-titulo {
@@ -716,6 +721,7 @@ background-position: center center;
         color: rgb(32, 168, 164);
         padding: 1rem;
         text-align: center;
+        
     }
     #nosotros_reseña {
         margin: 0;
@@ -724,6 +730,7 @@ background-position: center center;
         color: rgba(0, 0, 0, 0.719);
         width: 100%;
         text-align: center;
+        z-index: 6;
         
     }
 
@@ -776,7 +783,7 @@ background-position: center center;
         width: 100%;
         height: 30vh;
     }
-        h3 {
+        #promoTitulo {
             right: 20px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: rgb(255, 255, 255);
@@ -787,9 +794,26 @@ background-position: center center;
             position: absolute;
             z-index: 100;
         }
+                                        /* Pagina contacto */
 
+    #contacto {
+        display: flex;
+        flex-direction: column;
+    }                                    
+        #contenedorDirecciones {
+            flex-direction: column;
+            
+        }
+            .column {
+                width: 100%;
+            }
+                #direc1, #direc2 {
+                    border: none;
+                }
 
-
+                iframe {
+                    display: contents;
+                }
 }
 
     /* CONFIGURACION DEL TIEMPO DE ACCION DE LAS ANIMACIONES */
