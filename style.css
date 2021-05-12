@@ -741,30 +741,36 @@ background-position: center center;
         height: 100vh;
         overflow: hidden;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
     }
    
-    #nosotros-titulo {
+    #espacioReseña {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        margin: 0;
-        font-family: sans-serif;
-        font-size: 2.5rem;
-        color: rgb(32, 168, 164);
-        padding: 1rem;
-        text-align: center;
-        
     }
-    #nosotros_reseña {
-        margin: 0;
-        padding: 1rem;
-        font-size: 1rem;
-        color: rgba(0, 0, 0, 0.719);
-        width: 100%;
-        text-align: center;
-        z-index: 6;
-        
-    }
+
+        #nosotros-titulo {
+            width: 100%;
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 2rem;
+            color: rgb(32, 168, 164);
+            padding: 1rem;
+            text-align: center;
+            
+        }
+        #nosotros_reseña {
+            margin: 0;
+            padding: 1rem;
+            font-size: 1rem;
+            color: rgba(0, 0, 0, 0.719);
+            width: 100%;
+            text-align: center;
+            z-index: 6;
+            
+        }
 
     #casosContainer {
         display: flex;
@@ -775,7 +781,9 @@ background-position: center center;
         align-items: center;
         overflow: hidden;
 }
-
+    #espacioVacio {
+        display: none;
+    }
     #instagramTexto {
         display: none;
     }
