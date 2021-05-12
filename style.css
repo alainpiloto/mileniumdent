@@ -200,10 +200,18 @@ background-position: center center;
     height: 100vh;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: row;
+    /* justify-content: center; */
 }
+    #espacioVacio {
+        width: 60%;
+    }
+
+    #espacioReseña {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
 
     #logo_grande {
         
@@ -215,6 +223,7 @@ background-position: center center;
     }
   
     #nosotros-titulo {
+        width: 40%;
         font-family: sans-serif;
         font-size: 2.5rem;
         color: rgb(32, 168, 164);
@@ -225,7 +234,8 @@ background-position: center center;
     
   
     #nosotros_reseña {
-        font-size: 1.3rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2rem;
         color: rgba(0, 0, 0, 0.719);
         width: 500px;
         text-align: center;
@@ -234,49 +244,62 @@ background-position: center center;
 
                                             /* TERCERA PAGINA: CASOS */
 
-#casosContainer {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100vh;
-    justify-content: center ;
-    align-items: center;
-    overflow: hidden;
-
-    }
-
-    #casosFondo {
-        
-        position: absolute;
+    #casosContainer {
+        display: flex;
+        flex-direction: row;
         width: 100%;
         height: 100vh;
-        z-index: 3;
-        background-repeat: no-repeat;
-        background-position: center center;
+        
+        overflow: hidden;
 
     }
-    #casosTitulo {
-        font-family: sans-serif;
-        font-size: 2.5rem;
-        color: rgb(32, 168, 164);
-        padding: 0rem 2rem 2rem 2rem;
-      
-    }
+
+        #casosFondo {
+
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            z-index: 3;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+        }
+
+            #instagramContainer {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+
+            }           
+                #casosTitulo {
+                    text-align: center;
+                    width: 100%;
+                    font-family: sans-serif;
+                    font-size: 2.5rem;
+                    color: rgb(32, 168, 164);
+                    padding: 0rem 2rem 2rem 2rem;
+                
+                }
 
     #celularContainer {
         display: flex;
         flex-direction: column;
         align-content: center;
         align-items: center;
-        width: 50vw;
+        justify-content: center;
+        justify-items: center;
+        width: 50%;
         z-index: 5;
 
     }
-    #celularMockup {
+        #celularMockup {
 
-        position: relative;
-        width: 350px;
-    }
+            position: relative;
+            width: 350px;
+        }
 
     #instagramContainer {
         width: 50vw;
@@ -297,10 +320,10 @@ background-position: center center;
             background: linear-gradient(rgb(255, 145, 0),red, blue);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            padding: 2rem;
+            padding: 1.5rem;
             width: 400px;
             text-align: center;    
-            font-size: 2.7rem;
+            font-size: 2.5rem;
             line-height: 3rem;
         }
 
@@ -712,7 +735,16 @@ background-position: center center;
         width: 500px;
         z-index: 5;
     }
-
+    #nosotros_container {
+    
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+   
     #nosotros-titulo {
         width: 100%;
         margin: 0;
