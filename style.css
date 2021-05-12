@@ -809,11 +809,10 @@ background-position: center center;
             border-radius: 5px;
             flex-direction: column;
             background-color: #F8F9FA;
+            margin-bottom: 40px;
             
         }
-            #contenedorDirecciones p {
-
-            }
+            
             .column {
                 width: 100%;
             }
