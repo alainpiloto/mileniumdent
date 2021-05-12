@@ -801,13 +801,19 @@ background-position: center center;
         flex-direction: column;
     }                          
         #tituloContactoContainer {
-            padding-top: 100px ;
+            padding: 100px 0 50px 0;
         }
 
         #contenedorDirecciones {
+            font-size: 1rem;
+            border-radius: 5px;
             flex-direction: column;
+            background-color: #F8F9FA;
             
         }
+            #contenedorDirecciones p {
+
+            }
             .column {
                 width: 100%;
             }
@@ -815,8 +821,44 @@ background-position: center center;
                     border: none;
                 }
 
-                
-}
+        #formularioPagina   {
+            flex-direction: column-reverse;
+            height: 200vh;
+        }
+
+            form {
+                position: relative;
+                color: #ebebeb;
+                /* margin: 30px 10px; */
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(6 , 20px);
+                grid-template-areas: 
+                    "label1"
+                    " input1" 
+                    "label2" 
+                    "input2" 
+                    "label3" 
+                    "input3" 
+                    "label4" 
+                    "input4" 
+                    "label5"
+                    "input5"
+                    "input6";
+                grid-gap: 1rem 2rem;
+            }
+            #logoRedesContenedor {
+                width: 100%;
+            }
+
+                #footer p {
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                    height: 10vh;
+                    font-size: 0.8rem;
+                }
+    }
 
     /* CONFIGURACION DEL TIEMPO DE ACCION DE LAS ANIMACIONES */
     .fast {
