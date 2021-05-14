@@ -22,8 +22,8 @@ background-position: center center;
 }
 
 #logoMovil {
-    visibility: hidden;
-    overflow: hidden;
+    /* visibility: hidden;
+    overflow: hidden; */
     position: absolute;
         left: -220px;
         top: 570px;
@@ -47,6 +47,10 @@ background-position: center center;
     z-index: 99999;
 
 }
+  
+
+/* ESTA CLASE ES AGREGADA CON JAVASCRIPT A 600PX CON SCROLL */
+
 
         .cabeceraNavsBackground {
     margin: 0;
