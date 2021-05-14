@@ -21,15 +21,6 @@ background-repeat: no-repeat;
 background-position: center center;
 }
 
-#logoMovil {
-    /* visibility: hidden;
-    overflow: hidden; */
-    position: absolute;
-        left: -220px;
-        top: 570px;
-        width: 70%;
-        z-index: 4;;
-}
 
 .cabeceraNavs {
 
@@ -725,20 +716,13 @@ background-position: center center;
         overflow: hidden;
     }
 
-    #logoMovil {
-        position: absolute;
-        visibility: visible;
-        left: 5px;
-        top: 45px;
-        width: 20%;
-        z-index: 4;
-    }
+
 
     #logo_grande {
         
         position: absolute;
         left: -50;
-        top: 1100px;
+        top: 900px;
         width: 500px;
         z-index: 5;
     }
