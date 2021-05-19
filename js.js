@@ -13,7 +13,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 
 	$(window).scroll(function(){
-		if( $(this).scrollTop() > 400 ){
+		if( $(this).scrollTop() > 600 ){
 			$('#whatsAppFlotante').addClass('showWhatsappIcon') && $('#whatsAppFlotante').removeClass('hideWhatsappIcon');
 		} else {
 			$('#whatsAppFlotante').removeClass('showWhatsappIcon') && $('#whatsAppFlotante').addClass('hideWhatsappIcon');
