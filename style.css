@@ -754,6 +754,7 @@ background-position: center center;
         top: 900px;
         width: 500px;
         z-index: 5;
+        opacity: 0.4;
     }
     #nosotros_container {
     
