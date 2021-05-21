@@ -19,9 +19,9 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 		if( $(this).scrollTop() > 150 ){
-			$('#whatsAppFlotante').addClass('showWhatsappIcon') && $('#whatsAppFlotante').removeClass('hideWhatsappIcon');
+			$('#whatsAppFlotante').removeClass('hideWhatsappIcon') && $('#whatsAppFlotante').addClass('showWhatsappIcon') ;
 		} else {
-			$('#whatsAppFlotante').removeClass('showWhatsappIcon') && $('#whatsAppFlotante').addClass('hideWhatsappIcon');
+			 $('#whatsAppFlotante').addClass('hideWhatsappIcon') && $('#whatsAppFlotante').removeClass('showWhatsappIcon') ;
 		}
 	});
 
