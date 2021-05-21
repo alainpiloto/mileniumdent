@@ -1,8 +1,4 @@
 
-$(window).load(function() {
-	$(".water").fadeOut("slow");
-});
-
 
 $(document).ready(function(){
 
@@ -19,7 +15,7 @@ $(document).ready(function(){
 
 
 	$(window).scroll(function(){
-		if( $(this).scrollTop() > 600 ){
+		if( $(this).scrollTop() > 200 ){
 			$('#whatsAppFlotante').addClass('showWhatsappIcon') && $('#whatsAppFlotante').removeClass('hideWhatsappIcon');
 		} else {
 			$('#whatsAppFlotante').removeClass('showWhatsappIcon') && $('#whatsAppFlotante').addClass('hideWhatsappIcon');
