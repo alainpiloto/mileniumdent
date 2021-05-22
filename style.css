@@ -5,7 +5,6 @@
 }
                                                     /* Inicio del loader */
 
-
                                         /* FIN DEL LOADER */
 
 a span {
@@ -88,7 +87,7 @@ background-position: center center;
     z-index: 99999;
         }
 
-    /* Estilizado para los links del header INICIO*/
+                                    /* Estilizado para los links del header INICIO*/
 
     .links-hover {
         position: relative;
@@ -118,7 +117,7 @@ background-position: center center;
         width: 100%;
     }
 
-    /* Estilizado para los links del header FIN*/
+                                        /* Estilizado para los links del header FIN*/
 
 
     #logo {
