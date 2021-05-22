@@ -526,6 +526,7 @@ background-position: center center;
            }
 
             #logoImgContacto {
+
                 width: 400px;
                 
             }
@@ -882,6 +883,14 @@ background-position: center center;
                 #direc1, #direc2 {
                     border: none;
                 }
+        
+                
+        #logoImgContacto {
+
+            width: 100%;
+            height: auto;
+            
+        }
 
         #formularioPagina   {
             flex-direction: column-reverse;
