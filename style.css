@@ -5,6 +5,35 @@
 }
                                                     /* Inicio del loader */
 
+.loaderContainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #fff;
+    z-index: 9999999;
+}                                                    
+.preloader {
+    
+  width: 70px;
+  height: 70px;
+  border: 10px solid #eee;
+  border-top: 10px solid rgb(39, 254, 247);
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
                                         /* FIN DEL LOADER */
 
 a span {
@@ -825,7 +854,7 @@ background-position: center center;
         width: 70vw;
         
     }
-                        /* PAGINA PROMOCIONES MOBILE */
+                                            /* PAGINA PROMOCIONES MOBILE */
     #promosContainer {
         display: none;
     }
@@ -858,7 +887,7 @@ background-position: center center;
             position: absolute;
             z-index: 100;
         }
-                                        /* Pagina contacto */
+                                        /* Pagina contacto mobile*/
 
     #contacto {
         display: flex;
@@ -880,6 +909,10 @@ background-position: center center;
             .column {
                 width: 100%;
             }
+
+                .column p {
+                    padding: 0px 10px;
+                }
                 #direc1, #direc2 {
                     border: none;
                 }

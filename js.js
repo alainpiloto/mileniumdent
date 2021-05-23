@@ -1,4 +1,9 @@
 
+$(window).load(function() {
+	$(".loaderContainer").delay(2000).fadeOut("slow");
+  $("#overlayer").delay(2000).fadeOut("slow");
+})
+
 $(document).ready(function(){
 
 	$(window).scroll(function(){
