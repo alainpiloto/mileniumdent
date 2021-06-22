@@ -16,16 +16,13 @@ $(document).ready(function(){
 
 });
 
-
-
-
-	$(window).scroll(function(){
-		if( $(this).scrollTop() > 150 ){
-			$('#whatsAppFlotante').removeClass('hideWhatsappIcon') && $('#whatsAppFlotante').addClass('showWhatsappIcon') ;
-		} else {
-			 $('#whatsAppFlotante').addClass('hideWhatsappIcon') && $('#whatsAppFlotante').removeClass('showWhatsappIcon') ;
-		}
-	});
+$(window).scroll(function(){
+	if( $(this).scrollTop() > 150 ){
+		$('#whatsAppFlotante').removeClass('hideWhatsappIcon') && $('#whatsAppFlotante').addClass('showWhatsappIcon') ;
+	} else {
+		 $('#whatsAppFlotante').addClass('hideWhatsappIcon') && $('#whatsAppFlotante').removeClass('showWhatsappIcon') ;
+	}
+});
 
 
 
