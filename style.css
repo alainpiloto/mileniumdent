@@ -526,7 +526,6 @@ background-position: center center;
         display: flex;
         flex-direction: row;
         height: 35vh;
-        /* margin-top: px; */
         background-color: rgb(49, 49, 49);
         width: 100%;
     }   
@@ -583,13 +582,14 @@ background-position: center center;
                 grid-template-rows: repeat(4 , 20px);
                 grid-template-areas: 
                     "label1 input1 label5"
-                    "label2 input2 input5"
                     "label3 input3 input5"
-                    "label4 input4 input6";
+                    "label4 input4 input5"
+                    "none   none   input6";
                 grid-gap: 1rem 2rem;
             }
 
                 label {
+                    
                     font-size: 1.1rem;
                 }
 
@@ -923,12 +923,10 @@ background-position: center center;
                 color: #ebebeb;
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
-                grid-template-rows: repeat(6 , 20px);
+                grid-template-rows: repeat(5 , 20px);
                 grid-template-areas: 
                     "label1"
-                    " input1" 
-                    "label2" 
-                    "input2" 
+                    "input1" 
                     "label3" 
                     "input3" 
                     "label4" 
