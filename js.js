@@ -27,8 +27,3 @@ $(window).scroll(function(){
 
 
 
-
-
-
-
-
